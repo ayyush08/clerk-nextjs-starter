@@ -9,3 +9,11 @@ Event happens, you get to know about it and then you react on it.
 
 
 - Example: As soon as user register's successfully, clerk will shoot a lot of events knowns as Webhooks. These webhooks are nothing but the events that are being triggered by the system. These events are being listened by an Api endpoint. This Api endpoint is nothing but a server that is listening to the events. As soon as the event is being triggered, the server will get to know about it and then it will react on it as per the logic written in the server.
+
+
+## Custom Signup flow
+
+1. User fills and submits the form.
+2. Clerk creats user and initiates email verification
+3. User enter verification code sent on their email.
+4. Clerk verifies the code and logs the user in, redirecting to specified page.

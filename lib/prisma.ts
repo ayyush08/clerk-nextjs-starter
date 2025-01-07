@@ -7,6 +7,8 @@ const prismaClientSingleton = ()=>{
     return new PrismaClient();
 }
 
+type PrismaClientSingletion = ReturnType<typeof prismaClientSingleton> //whenever using prismaClientSingleton , type to be expected is of prismaClientSingleton
+
 //There could be a prisma connection or not 
 
 const globalForPrisma = globalThis as unknown as { prisma: PrismaClient |undefined }
