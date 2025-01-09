@@ -4,7 +4,7 @@ import { clerkClient } from '@clerk/clerk-sdk-node'
 
 const publicRoutes = createRouteMatcher([
     '/',
-    '/api/webhook/register',
+    '/api/webhooks/register',
     '/sign-in',
     '/sign-up'
 ])
